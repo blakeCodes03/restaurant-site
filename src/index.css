@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: outward-block;
+  src: url(../src/assets/outward-block.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  font-family: "outward-block", sans-serif;
+}
+
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.curly_font {
+  font-family: "Lobster", cursive;
+}
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/14079234/pexels-photo-14079234.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+@media (min-width: 1024px) {
+  /*media queries for larger screens*/
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    column-gap: 50px;
+  }
+}
+// style for swiper paigination circles
+.swiper-pagination-bullet-active {
+  background-color: #ff211b !important;
+}
+.menu-card {
+  background-repeat: no-repat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
