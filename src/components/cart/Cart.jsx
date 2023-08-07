@@ -91,7 +91,7 @@ const Cart = () => {
           </div>
         </div>
         <div className="flex gap-2 pt-4">
-          <button className="transition-colors text-sm bg-orange-600 hover:bg-orange-400 p-2 rounded-sm w-full lg:w-80 text-white text-hover shadow-md">
+          <button className=" text-sm bg-orange-600 hover:bg-orange-400 p-2 rounded-sm w-full lg:w-80 text-white text-hover shadow-md transition-colors">
             FINISH
           </button>
           <button className="transition-colors text-sm bg-white border border-gray-600 p-2 rounded-sm w-full lg:w-80 text-gray-700 text-hover shadow-md">
