@@ -407,7 +407,7 @@ $poppins: 'Poppins', sans-serif;
 
 
   .shoppingCart {
-    height: 3em;
+    height: 2em;
     will-change: filter;
     transition: filter 300ms;
     z-index: 1;
@@ -416,6 +416,7 @@ $poppins: 'Poppins', sans-serif;
   .shoppingCart{
     @media (min-width: 992px) {
       padding-right: 4rem ;
+      height: 3em;
       
     }
   }

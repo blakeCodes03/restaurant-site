@@ -16,7 +16,7 @@ const CartWidget = ({ productsCount }) => {
     <Link to="/cart">
 
     <div className={classes.container} onClick={navigateToCart}>
-      <span id='cart-product-count' className=' text-orange-400 relative left-8 bottom-6'>{productsCount}</span>
+      <span id='cart-product-count' className=' text-orange-400 relative left-6 bottom-4 lg:left-8 lg:bottom-6'>{productsCount}</span>
       <img id='cart-widget-svg' src={shoppingCart} className={classes.shoppingCart} alt="Go to Cart" />
     </div>
     </Link>

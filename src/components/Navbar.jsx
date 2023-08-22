@@ -16,10 +16,10 @@ const Navbar = () => {
 
   const productsCount = Object.keys(cart || {}).length  //checks number of items in the cart from local storage
   return (
-    <div className=" flex px-6 items-center justify-between">
+    <div className=" flex px-6 py-4 items-center justify-between">
       <Link to="/">
       <div className=" w-2">
-        <h1 className="logo text-white text-[6rem]  tracking-[0.1rem] lg:text-[6rem]   ">
+        <h1 className="logo text-white text-[4rem]  tracking-[0.1rem] lg:text-[6rem]   ">
           STOP<span className=" text-orange-400 h-1">.</span>
         </h1>
       </div>
@@ -51,7 +51,7 @@ const Navbar = () => {
       </div>
       <div className=" order-last lg:hidden">
         <GiHamburgerMenu
-          size={50}
+          size={30}
           className=" text-white"
           onClick={toggleMenu}
         />
@@ -62,7 +62,7 @@ const Navbar = () => {
             <GrClose
               onClick={toggleMenu}
               className="rounded p-1 text-black"
-              size={50}
+              size={30}
             />
           </div>
           <ul className="pt-8 px-6">
