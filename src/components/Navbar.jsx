@@ -5,6 +5,7 @@ import "animate.css";
 import { Link } from "react-router-dom";
 import useLocalStorageState from 'use-local-storage-state'
 import CartWidget from './homePage/CartWidget'
+import logo from '../assets/omnifood-logo.png'
 
 
 const Navbar = () => {
@@ -18,14 +19,15 @@ const Navbar = () => {
   return (
     <div className=" flex px-6 py-4 items-center justify-between">
       <Link to="/">
-      <div className=" w-2">
-        <h1 className="logo text-white text-[4rem]  tracking-[0.1rem] lg:text-[6rem]   ">
-          STOP<span className=" text-orange-400 h-1">.</span>
-        </h1>
+        <div className="">
+          <img className="w-28" src={logo}/>
+        {/* <h1 className="logo text-white text-[4rem]  tracking-[0.1rem] lg:text-[6rem]   ">
+          STOP
+        </h1> */}
       </div>
       </Link>
-      <div className=" absolute hidden lg:block right-[40%]">
-        <ul className="flex justify-center hover:cursor-pointer">
+      <div className="  absolute hidden lg:block right-[40%]">
+        <ul className=" curly_font text-xl lg:font-semibold flex justify-center hover:cursor-pointer">
           <li className="py-1 px-5 hover:rounded hover:text-amber-100 text-white">
             <a href="#">Menu</a>
           </li>
@@ -41,13 +43,15 @@ const Navbar = () => {
           
         </ul>
       </div>
-      <div className="hidden lg:inline">
-        {/* <button className="rounded-md bg-orange-600  hover:bg-orange-400  lg:w-60 lg:h-10 lg:mx-4 mt-2 text-white opacity-100 font-semibold">
+     
+        <div className=" relative lg:flex  pb-1  ">
+        <button className=" hidden lg:inline rounded-md bg-orange-600  hover:bg-orange-400  lg:w-60 lg:h-10 lg:mx-4 mt-2 text-white opacity-100 font-semibold">
           Book A Table
-        </button> */}
-      </div>
-        <div className=" relative left-20 pb-1  ">
+        </button>
+        <div className="pl-24 lg:pl-0">
+
          <CartWidget productsCount={productsCount} /> 
+        </div>
       </div>
       <div className=" order-last lg:hidden">
         <GiHamburgerMenu

@@ -65,13 +65,13 @@ function Menu() {
   //   return `${words.slice(0, maxlength)} …`
   //   }
   return (
-    <div className=" bg-[#675915] min-h-screen ">
+    <div className=" bg-[#FEE2B3] min-h-screen ">
       <Navbar />
       {/* <Nav/> */}
       <div className="pl-6 pt-4">
-        <h1 className=" text-white text-3xl lg:text-4xl">
+        <h1 className=" text-white text-2xl lg:text-4xl curly_font ">
           Eat Fresh With&#160;
-          <span className=" text-orange-400 pt-6 h-[5px] logo text-[3.6rem]  tracking-[0.1rem] lg:text-[6rem]">
+          <span className=" text-orange-400 curly_font">
             US
           </span>
         </h1>

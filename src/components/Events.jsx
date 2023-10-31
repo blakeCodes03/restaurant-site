@@ -9,7 +9,7 @@ function Events() {
       <div className=" lg:flex lg:mt-10">
         <div className="lg:justify-center">
           <h3 className=" text-sm text-slate-700 text-center lg:text-lg">Events</h3>
-          <h1 className="curly_font text-4xl text-center py-4">
+          <h1 className="curly_font text-[#3d3d3d] text-4xl text-center py-4">
             Enjoy <span className=" text-orange-400">Our Events</span>
           </h1>
           <p className=" text-sm text-center px-5 md:px-10 lg:px-10">

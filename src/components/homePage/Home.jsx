@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar";
 
-
 import { Link } from "react-router-dom";
 // import './css/home.scss'
 // import classes from "./css/Home.module.scss";
@@ -9,23 +8,43 @@ import { Link } from "react-router-dom";
 // import './index.js'
 const Home = () => {
   return (
-    <div id="home" className=" background">
+    <div id="home" className=" bg-[#FEE2B3] pb-28 ">
       {/* <div> */}
       <Navbar />
-      
-      <div className=" flex flex-col items-center justify-center text-center text-white absolute inset-x-0 bottom-[30%]">
-        <h5>ENJOY YOUR HEALTHY DELICIOUS MEAL</h5>
-        <h1 className=".curly_font text-4xl">Treat Yourself</h1>
-        <p className=" text-sm text-center px-20 md:px-40 lg:px-80">
-          Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia, there live the blind texts. Separated they
-          live in Bookmarksgrove
-        </p>
-        <Link to="/menu">
-          <button className="rounded-md bg-orange-600 w-80 h-10 lg:w-60 lg:h-10 lg:mx-4 mt-4 text-white opacity-100 font-semibold hover:bg-orange-400">
-            Explore Our Menu
-          </button>
-        </Link>
+      <div className=" grid gap-y-[15rem] grid-cols-1 py-4 px-12 lg:grid-cols-2 lg:gap-[9.6rem]  lg:mx-auto lg:pt-6 lg:mt-12">
+        <div className=" flex flex-col items-center justify-center text-center   ">
+          <h5 className="curly_font text-[#3d3d3d] text-2xl lg:text-6xl">
+            A healthy meal delivered to your door, every single day
+          </h5>
+          <p className=" text-sm px-0 lg:mt-6 lg:text-xl text-[#4b4b4b]">
+            The smart 365-days-per-year food subscription that will make you eat
+            healthy again. Tailored to your personal tastes and nutritional
+            needs.
+          </p>
+          <Link to="/menu">
+            <button className="rounded-md bg-orange-600 w-80 h-10 lg:w-60 lg:h-10 lg:mx-4 mt-4 text-white opacity-100 font-semibold hover:bg-orange-400">
+              Explore Our Menu
+            </button>
+          </Link>
+        </div>
+
+        <div className="relative pt-16 lg:pt-[26rem] ">
+          <img
+            className="w-[8rem]  absolute bottom-12 left-20 lg:w-[18rem] lg:left-14 lg:bottom-4 "
+            alt="chips and burger"
+            src="https://images.pexels.com/photos/2983099/pexels-photo-2983099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          />
+          <img
+            className="w-[8rem]  absolute bottom-10 left-32 lg:w-[20rem] lg:left-[15rem] lg:bottom-4"
+            alt="breakfast with eggs and pancakes"
+            src="https://images.pexels.com/photos/3850838/pexels-photo-3850838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          />
+          <img
+            className="w-[10rem]  absolute bottom-0  left-0 lg:w-[24rem] lg:left-0 lg:bottom-[-5rem]"
+            alt="woman eating food"
+            src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+          />
+        </div>
       </div>
 
       {/* <section className={styles.banner__overall}>
@@ -266,8 +285,6 @@ const Home = () => {
           </svg>
         </div>
       </section> */}
-     
-      
     </div>
   );
 };

@@ -36,7 +36,7 @@ function App() {
       
         <Route
           path="/"
-          element={[<Home  key={1}/>, <Meal  key={2}/>, <Testimonial  key={3}/>, <Events  key={4}/>, <ReviewForm key={5}/>,<Footer key={6}/>]}
+          element={[<Home  key={1}/>, <Testimonial  key={3}/>, <Events  key={4}/>, <ReviewForm key={5}/>,<Footer key={6}/>]}
 
         />
         <Route path="/menu" element={[<Menu key={1} />]} />
