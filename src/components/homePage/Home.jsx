@@ -1,4 +1,5 @@
 import React from "react";
+import "animate.css";
 import Navbar from "../Navbar";
 
 import { Link } from "react-router-dom";
@@ -30,17 +31,17 @@ const Home = () => {
 
         <div className="relative pt-16 lg:pt-[26rem] ">
           <img
-            className="w-[8rem]  absolute bottom-12 left-20 lg:w-[18rem] lg:left-14 lg:bottom-4 "
+            className="w-[8rem]  absolute bottom-12 left-20 lg:w-[18rem] lg:left-14 lg:bottom-4  animate__animated  animate__slideInRight"
             alt="chips and burger"
             src="https://images.pexels.com/photos/2983099/pexels-photo-2983099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           />
           <img
-            className="w-[8rem]  absolute bottom-10 left-32 lg:w-[20rem] lg:left-[15rem] lg:bottom-4"
+            className="w-[8rem]  absolute bottom-10 left-32 lg:w-[20rem] lg:left-[15rem] lg:bottom-4 animate__animated  animate__slideInLeft"
             alt="breakfast with eggs and pancakes"
             src="https://images.pexels.com/photos/3850838/pexels-photo-3850838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           />
           <img
-            className="w-[10rem]  absolute bottom-0  left-0 lg:w-[24rem] lg:left-0 lg:bottom-[-5rem]"
+            className="w-[10rem]  absolute bottom-0  left-0 lg:w-[24rem] lg:left-0 lg:bottom-[-5rem] animate__animated  animate__fadeInUp"
             alt="woman eating food"
             src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
           />

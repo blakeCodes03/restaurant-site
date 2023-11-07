@@ -7,5 +7,14 @@ export default defineConfig({
   plugins: [react(), ],
   optimizeDeps: {
     exclude: ['js-big-decimal']
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        math: "always",
+        relativeUrls: true,
+        javascriptEnabled: true
+      },
+    },
   }
 })

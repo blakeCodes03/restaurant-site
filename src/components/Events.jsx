@@ -12,12 +12,14 @@ function Events() {
           <h1 className="curly_font text-[#3d3d3d] text-4xl text-center py-4">
             Enjoy <span className=" text-orange-400">Our Events</span>
           </h1>
-          <p className=" text-sm text-center px-5 md:px-10 lg:px-10">
+          <p className=" text-sm text-center px-5 md:px-10 lg:px-10 lg:text-xl text-[#4b4b4b] lg:mt-6">
             Far far away, behind the word mountains, far from the countries
             Vokalia and Consonantia, there live the blind texts. Separated they
             live in Bookmarksgrove
           </p>
-          
+          <button className="hidden rounded-md bg-orange-600 w-60 h-10 lg:block lg:w-60 lg:h-10 lg:mx-auto lg:mt-10 text-white opacity-100 font-semibold hover:bg-orange-400">
+        Book Now
+      </button>
         </div>
         <div className=" items-center  py-2 px-4 md:py-1 md:px-1 lg:py-5 lg:px-5 ">
           <img
@@ -26,7 +28,7 @@ function Events() {
           />
         </div>
       </div>
-      <button className="rounded-md bg-orange-600 w-80 h-10 lg:w-60 lg:h-10 lg:mx-4 mt-8 lg:mt-10 text-white opacity-100 font-semibold hover:bg-orange-400">
+      <button className="rounded-md bg-orange-600 w-60 h-10 lg:w-60 lg:h-10 lg:mx-4 mt-8 lg:mt-10 lg:hidden text-white opacity-100 font-semibold hover:bg-orange-400">
         Book Now
       </button>
       <a href="#home" className="lg:hidden">
